@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about you..."
+            android:textColor="#001D3B"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"></TextView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We need your name &amp; city to continue."
+            android:textColor="#2F5373"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"></TextView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_below="@id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="#9EC4D9"
+            android:inputType="textPersonName"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#001D3B"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"></EditText>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_below="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:textColorHint="#9EC4D9"
+            android:inputType="text"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#001D3B"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"></EditText>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_below="@id/city"
+            android:layout_width="155dp"
+            android:layout_height="100dp"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="12dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#fff"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="25dp">
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#2F5373"
+                android:textStyle="normal"
+                android:textSize="17dp"></Button>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

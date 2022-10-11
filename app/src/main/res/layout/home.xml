@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/dashboard_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textColor="#001D3B"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"></TextView>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:id="@+id/go_to_insights"
+                android:layout_width="70dp"
+                android:layout_height="55dp"
+                android:layerType="software"
+                app:neomorph_view_type="rectangular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="5dp"
+                app:neomorph_corner_radius="28dp"
+                app:neomorph_background_color="#BCDBEF"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/menu"
+                app:tint="#001D3B"></ImageView>
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hi_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashboard_line"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <LinearLayout
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dashboard_line"
+                    android:text="hello, "
+                    android:textColor="#2F5373"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/clearsans_bold"></TextView>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXXXXX"
+                    android:textColor="#2F5373"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/clearsans_bold"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_below="@id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="check your Eduscore"
+                android:textColor="#2f5373"
+                android:textSize="30dp"
+                android:fontFamily="@font/clearsans_bold"
+                android:layout_marginTop="-10dp"></TextView>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_below="@id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="today."
+                android:textColor="#2f5373"
+                android:textSize="30dp"
+                android:fontFamily="@font/clearsans_bold"
+                android:layout_marginTop="-10dp"></TextView>
+
+            <TextView
+                android:layout_below="@id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="more than 90% have goal clarity\nafter getting their EduScore."
+                android:textColor="#637e96"
+                android:fontFamily="@font/clearsans_light"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"></TextView>
+        </RelativeLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/eduscore"
+            android:layout_below="@id/hi_line"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="12dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#fff"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="5dp">
+
+            <Button
+                android:id="@+id/check_eduscore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg"
+                android:text="Check eduscore"
+                android:textAllCaps="false"
+                android:textColor="#2F5373"
+                android:textStyle="normal"
+                android:textSize="17dp"></Button>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_below="@id/eduscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="join Edustage family today."
+            android:textColor="#637e96"
+            android:fontFamily="@font/gilroy_light"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"></TextView>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/card2"
+            android:layout_below="@id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="3dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#BCDBEF"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="-10dp"
+            android:layout_marginRight="-10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg">
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:background="#A7C7DC"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"></View>
+
+                <ImageView
+                    android:layout_below="@id/line"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"></ImageView>
+
+                <TextView
+                    android:id="@+id/eduscore_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line"
+                    android:text="Want to improve your EduScore?"
+                    android:textColor="#2F5373"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/clearsans_bold"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"></TextView>
+
+                <RelativeLayout
+                    android:layout_below="@id/eduscore_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="80dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="get what you deserve, and more.\nfollow Edustage roadmap,\nand standard the crowd."
+                        android:textColor="#637e96"
+                        android:fontFamily="@font/clearsans_light"
+                        android:textStyle="bold"></TextView>
+
+                    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                        android:id="@+id/go_to_improve_eduscore"
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layerType="software"
+                        app:neomorph_view_type="rectangular"
+                        app:neomorph_shadow_type="outer"
+                        app:neomorph_elevation="5dp"
+                        app:neomorph_corner_radius="28dp"
+                        app:neomorph_background_color="#BCDBEF"
+                        app:neomorph_shadow_color="#408AB1"
+                        app:neomorph_highlight_color="#fff"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/right_arrow"></ImageView>
+                    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/card3"
+            android:layout_below="@id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="3dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#BCDBEF"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginTop="-50dp"
+            android:layout_marginHorizontal="-10dp"
+            android:layout_marginRight="-10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg">
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:background="#A7C7DC"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"></View>
+
+                <ImageView
+                    android:layout_below="@id/line2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/triangle"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="-30dp"
+                    android:adjustViewBounds="true"></ImageView>
+
+                <TextView
+                    android:id="@+id/experts_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:text="Consult with Industry Experts"
+                    android:textColor="#2F5373"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/clearsans_bold"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"></TextView>
+
+                <RelativeLayout
+                    android:layout_below="@id/experts_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="get complete guidance\nand doubt clearance from\nExpert themselves."
+                        android:textColor="#637e96"
+                        android:fontFamily="@font/clearsans_light"
+                        android:textStyle="bold"></TextView>
+
+                    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                        android:id="@+id/go_to_experts"
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layerType="software"
+                        app:neomorph_view_type="rectangular"
+                        app:neomorph_shadow_type="outer"
+                        app:neomorph_elevation="5dp"
+                        app:neomorph_corner_radius="28dp"
+                        app:neomorph_background_color="#BCDBEF"
+                        app:neomorph_shadow_color="#408AB1"
+                        app:neomorph_highlight_color="#fff"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/right_arrow"></ImageView>
+                    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    </RelativeLayout>
+</ScrollView>

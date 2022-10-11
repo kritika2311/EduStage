@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/backto_phoneauth"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layerType="software"
+            app:neomorph_view_type="circular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="5dp"
+            app:neomorph_corner_radius="28dp"
+            app:neomorph_background_color="#BCDBEF"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-1dp"
+                android:src="@drawable/left_arrow"></ImageView>
+
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_below="@id/backto_phoneauth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We have sent you \nan OTP"
+            android:textColor="#001D3B"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"></TextView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the 4 digit OTP sent on your"
+            android:textColor="#2F5373"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/phoneNo_line"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/text1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/phoneNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9999999999"
+                android:textColor="#2F5373"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to proceed."
+                android:textColor="#2F5373"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"></TextView>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_below="@id/phoneNo_line"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:hint="OTP"
+            android:textColorHint="#9EC4D9"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#001D3B"
+            android:background="@android:color/transparent"></EditText>
+
+        <RelativeLayout
+            android:id="@+id/resend_otp_question"
+            android:layout_below="@id/otp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="33dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="did not receive OTP?"
+                android:textColor="#001D3B"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/resend_otp_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Resend OTP"
+                android:textColor="#001D3B"
+                android:background="@drawable/dotted_underline"></TextView>
+
+        </RelativeLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_below="@id/resend_otp_question"
+            android:layout_width="165dp"
+            android:layout_height="100dp"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="12dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#fff"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="15dp">
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="#2F5373"
+                android:textStyle="normal"
+                android:textSize="17dp"></Button>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

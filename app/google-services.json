@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "990763406791",
+    "project_id": "edustage1",
+    "storage_bucket": "edustage1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990763406791:android:3e551598853baa4155b5e2",
+        "android_client_info": {
+          "package_name": "com.example.edustage1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990763406791-5ec74clglp3amsbihbkg5mti3l4oughv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.edustage1",
+            "certificate_hash": "12a164235490f5b66a4e6db9ccad4f3d488fb31c"
+          }
+        },
+        {
+          "client_id": "990763406791-4u4gbarfj43gmd2vd1c6rqm46l9st6qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz_u9PT0Cpotwwbsvh7c9kblgDMmr7fy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990763406791-4u4gbarfj43gmd2vd1c6rqm46l9st6qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.goodiebag.protractorview.ProtractorView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerVertical="true"
+        app:angle="0"
+        app:angleTextSize="20dp"
+        app:arcColor="#4a4a4a"
+        app:arcProgressColor="#ff0000"
+        app:arcWidth="6dp"
+        app:progressWidth="5dp"
+        app:roundEdges="true"
+        app:textColor="#fff"
+        app:textProgressColor="#ff0000"
+        app:tickColor="#4a4a4a"
+        app:tickIntervals="15"
+        app:tickLength="10dp"
+        app:tickOffset="18dp"
+        app:tickProgressColor="#ABE6"
+        app:ticksBetweenLabel="three"
+        app:touchInside="false"></com.goodiebag.protractorview.ProtractorView>
+
+</RelativeLayout>

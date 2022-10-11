@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/design"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:src="@drawable/design"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-10dp"></ImageView>
+
+        <RelativeLayout
+            android:id="@+id/personality_type_line"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personality Type"
+                android:textColor="#001D3B"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"></TextView>
+        </RelativeLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/card"
+            android:layout_below="@id/personality_type_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="3dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#BCDBEF"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="-10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg">
+
+                <LinearLayout
+                    android:id="@+id/letters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/letter1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="E"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/letter2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="I"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/letter3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="T"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"></TextView>
+
+                    <TextView
+                        android:id="@+id/letter4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="J"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"></TextView>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_below="@id/letters"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#A7C7DC"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="28dp"></View>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_below="@id/line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:text="Realistics who are quick to make practical decisions."
+                    android:textSize="18dp"
+                    android:textColor="#637e96">
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/text1"
+                    android:layout_below="@id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1."
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginRight="5dp"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/job1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Insurance sales agent"
+                        android:textSize="18dp"
+                        android:textColor="#637e96"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text2"
+                    android:layout_below="@id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2."
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginRight="5dp"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/job2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Primary care physician"
+                        android:textSize="18dp"
+                        android:textColor="#637e96"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text3"
+                    android:layout_below="@id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3."
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginRight="5dp"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/job3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Corporate coach/Trainer"
+                        android:textSize="18dp"
+                        android:textColor="#637e96"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text4"
+                    android:layout_below="@id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4."
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginRight="5dp"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/job4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data communications analyst"
+                        android:textSize="18dp"
+                        android:textColor="#637e96"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text5"
+                    android:layout_below="@id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginBottom="35dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5."
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#2F5373"
+                        android:layout_marginRight="5dp"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/job5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employment specialist/HR professional"
+                        android:textSize="18dp"
+                        android:textColor="#637e96"></TextView>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/card1"
+            android:layout_below="@id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="1dp"
+            app:neomorph_corner_radius="15dp"
+            app:neomorph_background_color="#BCDBEF"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_marginVertical="3dp"
+                android:layout_marginHorizontal="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="255dp"
+                            android:layout_height="170dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layerType="software"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_highlight_color="#fff"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_view_type="rectangular">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="-1dp"
+                                        android:gravity="center"
+                                        android:text="I"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/introvert"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="INTROVERTS"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="36dp"
+                                    android:text=" often"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/introvert"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="like working alone or in\nsmall groups, prefer a\nmore deleberate pace, and\nlike to focus on one\ntask at a time."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
+                            android:layerType="software"
+                            app:neomorph_view_type="rectangular"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_highlight_color="#fff"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="E"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="-1dp"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/extrovert"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="EXTROVERTS"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="59dp"
+                                    android:text=" are"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/extrovert"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="emergized by people,\nenjoy a variety of tasks,\na quick pace, and are\ngood at maultitasking."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
+                            android:layerType="software"
+                            app:neomorph_view_type="rectangular"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_highlight_color="#fff"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="S"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="-1dp"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/sensors"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="SENSORS"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="34dp"
+                                    android:text=" are realistic"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/sensors"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="people who like to focus on\nthe facts and details, and\napply common sense and\npast experience to come up\nwith practical solution to\nproblems."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
+                            android:layerType="software"
+                            app:neomorph_view_type="rectangular"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_highlight_color="#fff"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="N"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="-1dp"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/intuitives"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="INTUITIVES"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="41dp"
+                                    android:text=" prefer to"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/intuitives"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="focus on possibilities and\nthe big picture, easily see\npatterns, value innovation,\nand seek creative\nsolutions to problems."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
+                            android:layerType="software"
+                            app:neomorph_view_type="rectangular"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_highlight_color="#fff"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="T"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="-1dp"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/thinkers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="THINKERS"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="57dp"
+                                    android:text=" tend to"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/thinkers"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="make decisions using\nlogical analysis, objectively\nweigh pros and cons, and\nvalue honesty, consistency,\nand fairness."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
+                            android:layerType="software"
+                            app:neomorph_view_type="rectangular"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_highlight_color="#fff"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="F"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="-1dp"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/feelers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="FEELERS"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="50dp"
+                                    android:text=" tend to be"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/feelers"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="sensitive and cooperative,\nand decide based on\ntheir own personal values\nand how others will be\naffected by their actions."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
+                            android:layerType="software"
+                            app:neomorph_view_type="rectangular"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_highlight_color="#fff"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="J"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="-1dp"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/judgers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="JUDGERS"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="44dp"
+                                    android:text=" tend to be"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/judgers"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="organized and prepared,\nlike to make and stick\nto plans, and are comfortable\nfollowing more rules."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
+                            android:layerType="software"
+                            app:neomorph_view_type="rectangular"
+                            app:neomorph_shadow_type="outer"
+                            app:neomorph_elevation="1dp"
+                            app:neomorph_corner_radius="15dp"
+                            app:neomorph_background_color="#BCDBEF"
+                            app:neomorph_shadow_color="#408AB1"
+                            app:neomorph_highlight_color="#fff"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:padding="5dp">
+
+                                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layerType="software"
+                                    app:neomorph_background_color="#BCDBEF"
+                                    app:neomorph_corner_radius="5dp"
+                                    app:neomorph_elevation="5dp"
+                                    app:neomorph_highlight_color="#fff"
+                                    app:neomorph_shadow_color="#408AB1"
+                                    app:neomorph_shadow_type="outer"
+                                    app:neomorph_view_type="rectangular">
+
+                                    <TextView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text="P"
+                                        android:textColor="#2F5373"
+                                        android:textSize="25dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginLeft="-1dp"></TextView>
+                                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                                <ImageView
+                                    android:layout_width="145dp"
+                                    android:layout_height="60dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginLeft="-30dp"
+                                    android:src="@drawable/tower"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/perceivers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="PERCEIVERS"
+                                    android:textColor="#2F5373"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginRight="32dp"
+                                    android:text=" prefer to"
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/perceivers"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:lineSpacingExtra="2dp"
+                                    android:text="keep their options open,\nlike to be able to act\nspontaneously and like to\nbe flexible with\nmaking plans."
+                                    android:textColor="#637e96"
+                                    android:textSize="13dp"></TextView>
+                            </RelativeLayout>
+
+                        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_below="@id/card1"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="12dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#fff"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="30dp">
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="#2F5373"
+                android:textStyle="normal"
+                android:textSize="17dp"></Button>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    </RelativeLayout>
+</ScrollView>

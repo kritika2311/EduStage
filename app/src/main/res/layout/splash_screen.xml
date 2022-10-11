@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCDBEF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/edustage"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@drawable/edustage"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"></ImageView>
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/u"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="u"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="s"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="t"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e"
+            android:textColor="#001D3B"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dp"
+            android:visibility="invisible"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

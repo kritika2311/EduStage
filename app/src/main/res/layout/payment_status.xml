@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/design"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:src="@drawable/design"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-10dp"></ImageView>
+
+        <RelativeLayout
+            android:id="@+id/payment_status_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Status"
+                android:textColor="#001D3B"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"></TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/thank_you"
+            android:layout_below="@id/payment_status_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You!"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#2F5373"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/oops"
+            android:layout_below="@id/payment_status_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oops!"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#2F5373"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_below="@id/thank_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your payment was successfully processed"
+            android:textColor="#637e96"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_below="@id/thank_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your payment was not successfully processed"
+            android:textColor="#637e96"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"></TextView>
+
+        <ImageView
+            android:id="@+id/success_img"
+            android:layout_below="@id/line"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"></ImageView>
+
+        <ImageView
+            android:id="@+id/failure_img"
+            android:layout_below="@id/line"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/failure"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"></ImageView>
+
+        <TextView
+            android:id="@+id/payment_id"
+            android:layout_below="@id/success_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment ID:"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#2F5373"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/payment_id_no"
+            android:layout_below="@+id/payment_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pay_GcatRYWOKaJkUK"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#2F5373"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/failue_msg"
+            android:layout_below="@id/success_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Failed"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#2F5373"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/failure_msg1"
+            android:layout_below="@id/payment_failure_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="please try again..."
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#637e96"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_below="@id/payment_id_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We will email and SMS you\n about your meeting date and time."
+            android:textColor="#637e96"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"></TextView>
+
+        <LinearLayout
+            android:id="@+id/payment_failure_id"
+            android:layout_below="@id/failue_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment ID: "
+                android:textColor="#637e96"
+                android:layout_centerHorizontal="true"></TextView>
+
+            <TextView
+                android:id="@+id/payment_failure_id_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pay_GcatRYWOKaJkUK"
+                android:textColor="#637e96"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"></TextView>
+
+        </LinearLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/btn"
+            android:layout_below="@+id/line2"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layerType="software"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="12dp"
+            app:neomorph_corner_radius="32dp"
+            app:neomorph_background_color="#fff"
+            app:neomorph_shadow_color="#408AB1"
+            app:neomorph_highlight_color="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp">
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="#2F5373"
+                android:textStyle="normal"
+                android:textSize="17dp"></Button>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <TextView
+            android:id="@+id/queries"
+            android:layout_below="@id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For any queries write a mail to: info@edustage.in."
+            android:textColor="#637e96"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"></TextView>
+    </RelativeLayout>
+
+</ScrollView>

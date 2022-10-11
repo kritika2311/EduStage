@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/industryExpert_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Industry Experts"
+                android:textColor="#001D3B"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"></TextView>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:id="@+id/backto_home"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layerType="software"
+                app:neomorph_view_type="rectangular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="5dp"
+                app:neomorph_corner_radius="28dp"
+                app:neomorph_background_color="#BCDBEF"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/left_arrow"></ImageView>
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_below="@id/industryExpert_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select an Industry Expert that you want to consult with..."
+            android:textSize="18dp"
+            android:textColor="#637e96"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/text"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+
+</ScrollView>

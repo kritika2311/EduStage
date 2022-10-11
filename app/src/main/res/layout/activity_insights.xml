@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/insights_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Insights"
+                android:textColor="#001D3B"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"></TextView>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:id="@+id/backto_home"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layerType="software"
+                app:neomorph_view_type="rectangular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="5dp"
+                app:neomorph_corner_radius="28dp"
+                app:neomorph_background_color="#BCDBEF"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/left_arrow"></ImageView>
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:id="@+id/logout_dialog"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:layerType="software"
+                app:neomorph_view_type="rectangular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="5dp"
+                app:neomorph_corner_radius="28dp"
+                app:neomorph_background_color="#BCDBEF"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textStyle="bold"
+                    android:textColor="#001D3B"></TextView>
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/insights_line"
+            android:layout_marginTop="50dp">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:id="@+id/image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layerType="software"
+                app:neomorph_view_type="circular"
+                android:layout_centerHorizontal="true"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="5dp"
+                app:neomorph_corner_radius="32dp"
+                app:neomorph_background_color="#fff"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/user" />
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingbutton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@id/image"
+                android:layout_alignBottom="@id/image"
+                android:src="@drawable/pencil"
+                android:elevation="1dp"
+                app:fabCustomSize="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_below="@id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#001D3B"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_below="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India"
+            android:textColor="#2F5373"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_below="@id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/eduscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eduscore"
+                android:textColor="#2F5373"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_below="@+id/eduscore"
+                android:id="@+id/nemorphiclayout"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layerType="software"
+                app:neomorph_view_type="circular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="2.3dp"
+                app:neomorph_corner_radius="28dp"
+                app:neomorph_background_color="#fff"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true">
+
+
+                <com.budiyev.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="13dp"
+                    app:animateProgress="true"
+                    app:backgroundStrokeColor="#BCDBEF"
+                    app:backgroundStrokeWidth="27dp"
+                    app:drawBackgroundStroke="true"
+                    app:foregroundStrokeCap="butt"
+                    app:foregroundStrokeColor="#408AB1"
+                    app:foregroundStrokeWidth="33dp"
+                    app:indeterminate="false"
+                    app:indeterminateRotationAnimationDuration="1200"
+                    app:indeterminateSweepAnimationDuration="600"
+                    app:indeterminateMinimumAngle="45"
+                    app:maximum="100"
+                    app:progressAnimationDuration="100"
+                    app:startAngle="270"/>
+
+                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+                <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                    android:layout_below="@+id/eduscore"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="85dp"
+                    android:layerType="software"
+                    app:neomorph_view_type="circular"
+                    app:neomorph_shadow_type="outer"
+                    app:neomorph_elevation="2.3dp"
+                    app:neomorph_corner_radius="28dp"
+                    app:neomorph_background_color="#fff"
+                    app:neomorph_shadow_color="#408AB1"
+                    app:neomorph_highlight_color="#fff"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/score_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45dp">
+
+                            <TextView
+                                android:id="@+id/userscore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="80"
+                                android:textSize="30sp"
+                                android:textColor="#001D3B"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="%"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:textColor="#001D3B" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_below="@+id/score_layout"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/arrow_up"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"/>
+                    </RelativeLayout>
+                </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+</ScrollView>

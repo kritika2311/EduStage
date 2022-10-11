@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCDBEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/design"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:src="@drawable/design"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-10dp"
+            android:visibility="invisible"></ImageView>
+
+        <RelativeLayout
+            android:id="@+id/personality_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personality Test"
+                android:textColor="#001D3B"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"></TextView>
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:id="@+id/backto_home"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layerType="software"
+                app:neomorph_view_type="rectangular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="5dp"
+                app:neomorph_corner_radius="28dp"
+                app:neomorph_background_color="#BCDBEF"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/left_arrow"></ImageView>
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Question1"
+            android:layout_below="@id/personality_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You enjoy vibrant social events with lots of people."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#2F5373"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"></TextView>
+
+            <RadioGroup
+                android:id="@+id/options1"
+                android:layout_below="@id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp">
+
+                <RadioButton
+                    android:id="@+id/optionA1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/optionB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"
+                    android:layout_marginTop="5dp"></RadioButton>
+            </RadioGroup>
+
+            <View
+                android:layout_below="@id/options1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A7C7DC"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="23dp"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Question2"
+            android:layout_below="@id/Question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You enjoy vibrant social events with lots of people."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#2F5373"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"></TextView>
+
+            <RadioGroup
+                android:id="@+id/options2"
+                android:layout_below="@id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp">
+
+                <RadioButton
+                    android:id="@+id/optionA2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/optionB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"
+                    android:layout_marginTop="5dp"></RadioButton>
+            </RadioGroup>
+
+            <View
+                android:layout_below="@id/options2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A7C7DC"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="23dp"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Question3"
+            android:layout_below="@id/Question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You enjoy vibrant social events with lots of people."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#2F5373"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"></TextView>
+
+            <RadioGroup
+                android:id="@+id/options3"
+                android:layout_below="@id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp">
+
+                <RadioButton
+                    android:id="@+id/optionA3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/optionB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"
+                    android:layout_marginTop="5dp"></RadioButton>
+            </RadioGroup>
+
+            <View
+                android:layout_below="@id/options3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A7C7DC"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="23dp"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Question4"
+            android:layout_below="@id/Question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You enjoy vibrant social events with lots of people."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#2F5373"
+                android:gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"></TextView>
+
+            <RadioGroup
+                android:id="@+id/options4"
+                android:layout_below="@id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp">
+
+                <RadioButton
+                    android:id="@+id/optionA4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/optionB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textSize="20dp"
+                    android:textColor="#637e96"
+                    android:checked="false"
+                    android:buttonTint="#637e96"
+                    android:layout_marginTop="5dp"></RadioButton>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/submit_btn"
+            android:layout_below="@id/Question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true">
+
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:layout_width="155dp"
+                android:layout_height="100dp"
+                android:layerType="software"
+                app:neomorph_view_type="rectangular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="12dp"
+                app:neomorph_corner_radius="32dp"
+                app:neomorph_background_color="#fff"
+                app:neomorph_shadow_color="#408AB1"
+                app:neomorph_highlight_color="#fff">
+
+                <Button
+                    android:id="@+id/next_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_bg"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="#2F5373"
+                    android:textStyle="normal"
+                    android:textSize="17dp"></Button>
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
